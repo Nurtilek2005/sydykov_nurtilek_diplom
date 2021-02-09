@@ -1,8 +1,10 @@
 :root {
-  --main-color: #303441;
+  --main-color: #525252;
   --second-color: #eb5055;
-  --text-color: #303441;
+  --background-color: #f7f6f2;
+  --text-color: #525252;
   --font: "Roboto";
+  --second-font: "Helvetica";
 }
 
 @font-face {
@@ -1022,6 +1024,61 @@
   src: url("../fonts/roboto/robotoblack.woff2") format("woff2"), url("../fonts/roboto/robotoblack.woff") format("woff");
   font-weight: 900;
 }
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticaregular.woff2") format("woff2"), url("../fonts/helvetica/helveticaregular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticaitalic.woff2") format("woff2"), url("../fonts/helvetica/helveticaitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticalight.woff2") format("woff2"), url("../fonts/helvetica/helveticalight.woff") format("woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticalightitalic.woff2") format("woff2"), url("../fonts/helvetica/helveticalightitalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticamedium.woff2") format("woff2"), url("../fonts/helvetica/helveticamedium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticamediumitalic.woff2") format("woff2"), url("../fonts/helvetica/helveticamediumitalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticabold.woff2") format("woff2"), url("../fonts/helvetica/helveticabold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticabolditalic.woff2") format("woff2"), url("../fonts/helvetica/helveticabolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticablack.woff2") format("woff2"), url("../fonts/helvetica/helveticablack.woff") format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: var(--second-font);
+  src: url("../fonts/helvetica/helveticablackitalic.woff2") format("woff2"), url("../fonts/helvetica/helveticablackitalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -1275,9 +1332,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .swiper-slide {
-  flex-shrink: 1;
+  flex-shrink: 10;
   padding: 1rem;
-  background: #f1f5f9;
+  background: var(--background-color);
   border-radius: 10px;
 }
 
@@ -1289,5 +1346,45 @@ h1, h2, h3, h4, h5, h6 {
 .about-us {
   padding: 1.25rem 0;
   text-align: center;
-  background: #c1c5c9;
+  background: var(--background-color);
+}
+.about-us__info {
+  max-width: 892px;
+  margin: 0 auto;
+}
+.about-us__info-title {
+  font-weight: 900;
+  font-size: 40px;
+}
+.about-us__info-title span {
+  font-weight: 200;
+}
+.about-us__info-text {
+  font-size: 12px;
+  letter-spacing: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+.about-us__info-text::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #cccccc;
+}
+.about-us__info-text::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 60px;
+  height: 3px;
+  background: #cccccc;
+}
+.about-us__info-desc {
+  font-family: var(--second-font);
+  font-size: 16px;
+  line-height: 29px;
 }
