@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>My project</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
   <div class="wrapper">
-    
+
 
     <header class="header">
       <img src="./img/circle.svg" alt="" class="header-bg">
@@ -41,31 +46,146 @@
     </header>
 
     <main class="main">
-      <div class="container">
-        <article class="items slider-container">
-          <div class="slider-wrapper">
-            <section class="thumbs slider-thumbs">
-              <a href="#" class="btn thumbs-fruits">organic <strong>fruits</strong></a>
-              <a href="#" class="btn thumbs-vegetables">organic <strong>vegetables</strong></a>
-              <a href="#" class="thumbs-all">
-                <img src="./img/main.png" alt="" class="thumbs-all__img">
-              </a>
-              <a href="#" class="btn thumbs-juices">organic <strong>juices</strong></a>
-              <a href="#" class="btn thumbs-dried_fruits">organic <strong>dried fruits</strong></a>
-            </section>
+      <section class="shop">
+        <div class="container">
+          <article class="swiper__thumbs swiper-container-thumbs">
+            <div class="swiper-wrapper">
+              <section class="thumbs swiper-thumbs">
+                <a href="#" class="btn thumbs-fruits">organic <strong>fruits</strong></a>
+                <a href="#" class="btn thumbs-vegetables">organic <strong>vegetables</strong></a>
+                <a href="#" class="thumbs-all">
+                  <img src="./img/main.png" alt="" class="thumbs-all__img">
+                </a>
+                <a href="#" class="btn thumbs-juices">organic <strong>juices</strong></a>
+                <a href="#" class="btn thumbs-dried_fruits">organic <strong>dried fruits</strong></a>
+              </section>
+            </div>
+          </article>
+
+          <article class="shop__items swiper-container">
+            <ul class="swiper__list swiper-wrapper">
+              <li class="swiper__item swiper-slide">
+                <img src="./img/baby-corn.svg" alt="" class="swiper__img">
+                <h4 class="swiper__title">organic <strong>baby corn</strong></h4>
+              </li>
+              <li class="swiper__item swiper-slide">
+                <img src="./img/tomato.svg" alt="" class="swiper__img">
+                <h4 class="swiper__title">organic <strong>tomato</strong></h4>
+              </li>
+              <li class="swiper__item swiper-slide">
+                <img src="./img/cabbage.svg" alt="" class="swiper__img">
+                <h4 class="swiper__title">organic <strong>cabbage</strong></h4>
+              </li>
+              <li class="swiper__item swiper-slide">
+                <img src="./img/ginger.svg" alt="" class="swiper__img">
+                <h4 class="swiper__title">organic <strong>ginger</strong></h4>
+              </li>
+              <li class="swiper__item swiper-slide">
+                <img src="./img/pineapple.svg" alt="" class="swiper__img">
+                <h4 class="swiper__title">organic <strong>pineapple</strong></h4>
+              </li>
+              <li class="swiper__item swiper-slide">
+                <img src="./img/rasberry.svg" alt="" class="swiper__img">
+                <h4 class="swiper__title">organic <strong>rasberry</strong></h4>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="about">
+        <article class="about-us">
+          <div class="container">
+            <div class="about-us__info">
+              <h2 class="about-us__info-title">we are organic farmfood</h2>
+              <p class="about-us__info-text">ABOUT NATURIX FARMFOOD</p>
+              <p class="about-us__info-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <img src="./img/about1.svg" alt="" class="about-us__img">
+                <h1 class="about-us__title">fresh from naturix farm</h1>
+                <p class="about-us__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                <a href="#" class="btn about-us__link">read more</a>
+              </li>
+              <li class="about-farmfood__item">
+                <img src="./img/about2.svg" alt="" class="about-us__img">
+                <h1 class="about-us__title">100% organic goods</h1>
+                <p class="about-us__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                <a href="#" class="btn about-farmfood__link">read more</a>
+              </li>
+              <li class="about-farmfood__item">
+                <img src="./img/about3.svg" alt="" class="about-us__img">
+                <h1 class="about-us__title">premium quality</h1>
+                <p class="about-us__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                <a href="#" class="btn about-us__link">read more</a>
+              </li>
+              <li class="about-farmfood__item">
+                <img src="./img/about4.svg" alt="" class="about-us__img">
+                <h1 class="about-us__title">100% natural</h1>
+                <p class="about-us__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                <a href="#" class="btn about-us__link">read more</a>
+              </li>
+            </ul>
+            <img src="./img/about.png" alt="" class="about-us__img-bottom">
           </div>
         </article>
 
-        <article class="about">
-          
+        <article class="about-farm">
+          <div class="container">
+            <ul class="about-farm__list">
+              <li class="about-farm__item">
+                <img src="./img/about1.svg" alt="" class="about-farm__item-img">
+                <h4 class="about-farm__item-title">organic <strong>fruits</strong></h4>
+                <i class="about-farm__item-text"><span>23</span> items</i>
+              </li>
+              <li class="about-farm__item">
+                <img src="./img/about2.svg" alt="" class="about-farm__item-img">
+                <h4 class="about-farm__item-title">organic <strong>fruits</strong></h4>
+                <i class="about-farm__item-text"><span>23</span> items</i>
+              </li>
+              <li class="about-farm__item">
+                <img src="./img/about3.svg" alt="" class="about-farm__item-img">
+                <h4 class="about-farm__item-title">organic <strong>fruits</strong></h4>
+                <i class="about-farm__item-text"><span>23</span> items</i>
+              </li>
+            </ul>
+            <div class="about-farm__info">
+              <h5 class="about-farm__info-title">FRESH FROM OUR FARM</h5>
+              <h2 class="about-farm__info-title"><span>220+ </span>fruits, vegetables<span> & </span>lot more</h2>
+            </div>
+            <div class="about-farm__info">
+              <h5 class="about-farm__info-title">FRESH FROM OUR FARM</h5>
+              <h2 class="about-farm__info-title"><span>115+ </span>organic juices<span> and </span>organic tea</h2>
+            </div>
+            <ul class="about-farm__list">
+              <li class="about-farm__item">
+                <img src="./img/about1.svg" alt="" class="about-farm__item-img">
+                <h4 class="about-farm__item-title">organic <strong>juices</strong></h4>
+                <i class="about-farm__item-text"><span>23</span> items</i>
+              </li>
+              <li class="about-farm__item">
+                <img src="./img/about2.svg" alt="" class="about-farm__item-img">
+                <h4 class="about-farm__item-title">cried <strong>juices</strong></h4>
+                <i class="about-farm__item-text"><span>23</span> items</i>
+              </li>
+              <li class="about-farm__item">
+                <img src="./img/about3.svg" alt="" class="about-farm__item-img">
+                <h4 class="about-farm__item-title">organic <strong>tea</strong></h4>
+                <i class="about-farm__item-text"><span>23</span> items</i>
+              </li>
+            </ul>
+            <h5 class="about-farm__title">FRESH FROM OUR FARM</h5>
+            <h2 class="about-farm__title"><span>naturix</span> organic goods</h2>
+          </div>
         </article>
-      </div>
+      </section>
     </main>
 
-  </div>
-
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

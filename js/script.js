@@ -6,6 +6,12 @@ var hamburger = document.querySelector(".hamburger");
     nav.classList.toggle("is-active");
   });
 
-// let swiper = new Swiper('.swiper-container', {
-  
-// })
+let swiper = new Swiper('.swiper-container', {
+  speed: 400,
+  slidesPerView: 6,
+  thumbs: {
+    thumbs: {
+      thumbsContainerClass: 'swiper-container-thumbs'
+    }
+  }
+})

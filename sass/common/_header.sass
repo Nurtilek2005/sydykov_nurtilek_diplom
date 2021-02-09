@@ -9,20 +9,22 @@
     position: absolute
     object-fit: cover
     width: 100%
-    bottom: -1px
+    bottom: -2px
     left: 0
     right: 0
   &-top
     display: flex
+    padding: rem(30px) 0
+    align-items: center
     justify-content: space-between
   &-info
     +flex(center, center, $dir: column)
     text-align: center
   &__title
     margin-top: rem(20px)
-    font-size: 40px
+    font-size: 50px
     +tablet
-      font-size: 50px
+      font-size: 40px
   &__title span
     font-weight: 200
   &__text
@@ -34,30 +36,23 @@
     margin-top: rem(50px)
     background: #ffffff
 .logo
-  padding: rem(30px) 0
   position: relative
   font-size: 30px
-  strong
-    padding-right: 10px
   strong::after
     content: url('../img/header2.png')
     +pos-overlay()
-    top: 10px
+    top: -20px
     left: 65px
 .nav
-  +pos-overlay()
-  +flex(center, center, $dir: column)
-  top: 0
-  transform: translateY(-100vh)
-  height: 100vh
-  bottom: 0
+  +flex($dir: row)
+  transform: translateY(0)
   +tablet
-    height: auto
-    padding: rem(30px) 0
-    position: static
-    background: unset
-    +flex($dir: row)
-    transform: translateY(0)
+    +pos-overlay()
+    +flex(center, center, $dir: column)
+    top: 0
+    transform: translateY(-100vh)
+    height: 100vh
+    bottom: 0
 
   &.is-active
     display: flex
@@ -66,41 +61,53 @@
 
   &__link
     display: flex
-    transform: translateY(-100vh)
     color: $textColor
+    margin-right: rem(20px)
+    transform: none
+    position: relative
     text-decoration: none
-    margin: rem(10px) 0
     text-transform: uppercase
-    &--active
-      color: $secondColor
+    &:last-child
+      margin-right: 0
+    &--active::after
+      content: ''
+      border-radius: 100px
+      width: 5px
+      height: 5px
+      background: #3bc71f
+      +pos-overlay()
+      left: 20px
+      top: 20px
     &:hover
-      opacity: 0.7
-
+        opacity: 0.7
     +tablet
-      display: flex
-      transform: none
-      position: relative
-      margin: 0 rem(15px)
-      &:last-child
-        margin-right: 0
+      margin: rem(10px) 0
+      transform: translateY(-100vh)
+
 
 .is-active .nav__link:nth-child(1)
   animation: links 1s forwards
-  animation-delay: .7s
+  animation-delay: .8s
 .is-active .nav__link:nth-child(2)
   animation: links 1s forwards
-  animation-delay: .6s
+  animation-delay: .7s
 .is-active .nav__link:nth-child(3)
   animation: links 1s forwards
-  animation-delay: .5s
+  animation-delay: .6s
 .is-active .nav__link:nth-child(4)
   animation: links 1s forwards
-  animation-delay: .4s
+  animation-delay: .5s
 .is-active .nav__link:nth-child(5)
   animation: links 1s forwards
+  animation-delay: .4s
+.is-active .nav__link:nth-child(6)
+  animation: links 1s forwards
   animation-delay: .3s
+.is-active .nav__link:nth-child(7)
+  animation: links 1s forwards
+  animation-delay: .2s
 .hamburger
-  padding: rem(30px) 0
+  display: none
   +tablet
-    display: none
+    display: block
 
