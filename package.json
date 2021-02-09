@@ -1,0 +1,26 @@
+{
+  "name": "sydykov_nurtilek_diplom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bourbon": "^7.0.0",
+    "hamburgers": "^1.1.3",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurtilek2005/sydykov_nurtilek_diplom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nurtilek2005/sydykov_nurtilek_diplom/issues"
+  },
+  "homepage": "https://github.com/Nurtilek2005/sydykov_nurtilek_diplom#readme"
+}

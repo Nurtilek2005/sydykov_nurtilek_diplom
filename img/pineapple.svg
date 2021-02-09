@@ -5,11 +5,5 @@
 	<style>
 		tspan { white-space:pre }
 	</style>
-	<g id="ORGANIC ALL NATURE">
-		<g id="product">
-			<g id="5">
-				<use id="Bitmap" href="#img1" x="0" y="0" />
-			</g>
-		</g>
-	</g>
+	<use id="Bitmap" href="#img1" x="0" y="0" />
 </svg>

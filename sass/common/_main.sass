@@ -13,19 +13,16 @@
   margin-bottom: rem(50px)
   text-align: center
 .swiper__list
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr))
+  margin: rem(50px) 0
   justify-content: center
-  gap: rem(10px)
-  list-style: none
-  padding: 0
-  margin: 0
+  gap: rem(20px)
 .swiper-slide
-  flex-shrink: 10
+  min-height: 370px
   padding: 1rem
   background: $backgroundColor
   border-radius: 10px
-.swiper__img
-  width: 50%
-  height: 50%
 .about-us
   padding: rem(20px) 0
   text-align: center
@@ -42,20 +39,21 @@
       font-size: 12px
       letter-spacing: 5px
       position: relative
+      font-weight: 500
       text-transform: uppercase
       &::after
         content: ''
         position: absolute
-        top: 8px
-        left: 0
+        top: 6px
+        left: 235px
         width: 60px
         height: 3px
         background: #cccccc
       &::before
         content: ''
         position: absolute
-        top: 8px
-        right: 0
+        top: 6px
+        right: 240px
         width: 60px
         height: 3px
         background: #cccccc
@@ -63,3 +61,18 @@
       font-family: $secondFont
       font-size: 16px
       line-height: 29px
+  &__list
+    margin-top: rem(50px) 0
+    display: flex
+    justify-content: center
+  &__item
+    margin: 0 rem(20px)
+    padding: rem(20px)
+    &:last-child
+      margin-top: rem(100px)
+      margin-right: 0
+    &:first-child
+      margin-top: rem(100px)
+      margin-left: 0
+  &__text
+    margin-bottom: rem(50px)
